@@ -1,8 +1,11 @@
-const Engineer = require("../lib/Engineer");
-const Manager = require("../lib/Manager");
-
+const Engineer = require("./lib/Engineer");
+const Manager = require("./lib/Manager");
+const Intern = require("./lib/Intern");
 // hold info for question
-const inquirer = requre("require");
+const inquirer = requre("inquirer");
+const fs = require('fs')
+const renderTeam = require("./src/html-templates")
+
 const teamMemberObjectArray = [];
 
 //collecting input
@@ -140,6 +143,10 @@ const init = () => {
         teamMemberObjectArray.push(intern);
         addEmployees();
       });
+    }
+
+    function buildTeam () {
+        fs.writeFile("./dist/index.html", renderTeam(teamMemberObjectArray), "utf-8")
     }
 }
 
