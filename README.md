@@ -5,7 +5,10 @@
  <h1> Technologies Used </h1>
    <h2>Javascript, HTML, Bootstraps</h2>
    
-   
+  <h1>Links</h1>
+  https://github.com/jschneringer/team-profile-generator
+  
+  
   <h1>Screenrecording and Gif</h1>
   
   ![ezgif com-gif-maker](https://user-images.githubusercontent.com/105464327/175795272-84517b36-0508-46d3-bbd0-3749d41ae58d.gif)
